@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Web Vulnerability Scanner',
   description: 'Advanced Web Application Security Scanner',
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
+  metadataBase: new URL("https://vuln-scanner.vercel.app/"),
 }
 
 export default function RootLayout({
