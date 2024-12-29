@@ -90,7 +90,7 @@ export default function Dashboard({ results }: DashboardProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-lg font-semibold mb-4">Vulnerability Summary</h3>
+          <h3 className="text-lg font-semibold mb-4 text-[#0e0e0eb9]">Vulnerability Summary</h3>
           <div className="h-64">
             <Doughnut data={chartData} options={{ maintainAspectRatio: false }} />
           </div>
