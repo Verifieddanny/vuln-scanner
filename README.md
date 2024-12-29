@@ -23,7 +23,7 @@ Here's a breakdown of the key features:
 ## 🛠️ How to Use It
 
 1.  **Clone the repository:** `git clone [https://github.com/Verifieddanny/vuln-scanner.git]` ⬇️
-2.  **Install dependencies:** `npm install` or `yarn install` 📦
+2.  **Install dependencies:** `npm install` or `bun install` or `yarn install` 📦
 3.  **Run the project:** `npm run dev` or `bun run dev` or `yarn run dev` ▶️
 4.  **Access the web interface:** Open your browser and navigate to the appropriate URL (usually `http://localhost:3000`). 🌐
 5.  **Enter the target URL:** Provide the URL of the website you want to scan. 🎯
