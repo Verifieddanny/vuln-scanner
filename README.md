@@ -63,6 +63,6 @@ If you like this project, please consider giving it a star! ⭐ It means a lot t
 
 ## 📧 Contact
 
-If you have any questions or just want to say hi, feel free to reach out to me at [your email address]. 📧
+If you have any questions or just want to say hi, feel free to reach out to me at <a href="mailto: dannyclassic56@gmail.com">dannyclassic56@gmail.com</a>. 📧
 
 Have a great day! 🎉
