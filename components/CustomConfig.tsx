@@ -1,14 +1,15 @@
 
+interface CrawlerConfig {
+  timeout: number;
+  userAgent: string;
+  maxDepth: number;
+  concurrency: number;
+  followRedirects: boolean;
+}
 interface CustomConfigProps {
-    config: {
-      timeout: number;
-      userAgent: string;
-      maxDepth: number;
-      concurrency: number;
-      followRedirects: boolean;
-    };
-    onChange: (config: any) => void;
-  }
+  config: CrawlerConfig; // Use the defined interface here
+  onChange: (config: CrawlerConfig) => void; // Update argument type
+}
   
   export default function CustomConfig({ config, onChange }: CustomConfigProps) {
     return (

@@ -22,9 +22,9 @@ export async function POST(req: NextRequest) {
       scanDuration,
       vulnerabilities
     })
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json(
-      { error: error.message },
+      { error: error },
       { status: 500 }
     )
   }
