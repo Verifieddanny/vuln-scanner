@@ -39,7 +39,7 @@ This project uses a combination of techniques to detect vulnerabilities, includi
 *   **Response Analysis:** Analyzing the server's responses for error messages, indicators of successful attacks, and missing security headers.
 *   **Regular Expressions:** Using regular expressions to identify patterns of sensitive data.
 
-The backend is built with Node.js and uses `axios` for making HTTP requests. The frontend is built with React and provides a user-friendly interface for interacting with the scanner.
+The backend is built with NEXTjs and provides a user-friendly interface for interacting with the scanner. it uses `axios` for making HTTP requests.
 
 ## 🤝 Contributing
 
