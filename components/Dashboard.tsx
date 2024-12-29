@@ -3,12 +3,13 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { ArrowDownTrayIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 import { toPng } from 'html-to-image';
+import { Vulnerability } from '@/lib/types';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 interface DashboardProps {
   results: {
-    vulnerabilities: any[];
+    vulnerabilities: Vulnerability[];
     scanDuration: number;
     timestamp: string;
   };
@@ -49,7 +50,7 @@ export default function Dashboard({ results }: DashboardProps) {
   
   useEffect(() => {
     const newStats = results.vulnerabilities.reduce((acc, vuln) => {
-      acc[vuln.severity.toLowerCase()]++;
+      acc[vuln.severity.toLowerCase() as keyof typeof acc]++;
       return acc;
     }, {
       critical: 0,
