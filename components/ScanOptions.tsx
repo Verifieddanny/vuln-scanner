@@ -87,6 +87,20 @@ export default function ScanOptions({ onChange }: ScanOptionsProps) {
         enabled: false,
         severity: 'Critical'
       },
+      {
+        id: 'idor',
+        name: 'Broken Access Control (IDOR)',
+        description: 'Detect insecure direct object references',
+        enabled: false,
+        severity: 'High'
+      },
+      {
+        id: 'tls',
+        name: 'TLS/SSL Misconfiguration',
+        description: 'Check for weak protocols or invalid certificates',
+        enabled: false,
+        severity: 'Critical'
+      }
   ]);
 
   const toggleOption = (index: number) => {
